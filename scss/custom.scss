@@ -1,0 +1,78 @@
+$topbar-links-height: $topbar-height / 2;
+$topbar-links-padding: $topbar-links-height/2;
+
+/* utility classes */
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* custom styling */
+
+h1, h2 {
+	-webkit-font-smoothing: antialiased;
+}
+
+.top-bar-shadow {
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.2);
+	// border-bottom: 1px solid $iron;
+}
+
+.top-bar {
+	.name h1 a {
+		color: $monsoon;
+	}
+
+	.top-bar-section {
+		padding-top: $topbar-links-padding;
+
+		li:not(.has-form) a:not(.button) {
+			line-height: $topbar-links-height;
+			font-weight: 300;
+		}
+
+	}
+}
+
+.main {
+	color: $monsoon;
+
+	.container {
+
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		h1 {
+			color: #C4A97C;
+			font-size: rem-calc(35);
+			font-weight: 300;
+		}
+
+		h2 {
+			color: $monsoon;
+			font-size: rem-calc(25);
+			font-weight: 300;
+		}
+	}
+
+	#features {
+
+		padding-top: 10px;
+
+		.row {
+			margin-top: 30px;
+
+			p {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#shop {
+		background: $silver;
+
+
+	}
+}
